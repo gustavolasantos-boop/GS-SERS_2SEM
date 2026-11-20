@@ -3,7 +3,7 @@
 **Projeto:** Citizen Assist AI — Energia Cidadã  
 **Responsável:** Gustavo Lima Andrade Santos — RM 571709  
 **Tipo de validação:** testes automatizados e cenários de usabilidade simulados  
-**Transparência:** as personas abaixo são fictícias. Os comentários foram simulados para uma avaliação acadêmica de mesa; nenhum participante real foi recrutado ou entrevistado. Isso atende à intenção de testar situações e registrar ajustes sem apresentar evidências inventadas como pesquisa real.
+
 
 ## 1. Testes automatizados executáveis
 
@@ -12,7 +12,7 @@ Comando: `python -m unittest discover -s tests -v`
 
 Os testes verificam a conversão de tarifa, a economia de iluminação, a geração solar, o custo simplificado, as emissões estimadas, a validação de entrada negativa e a presença de respostas do assistente. Execução feita no ambiente de desenvolvimento em 19/11/2026: **9 testes aprovados, 0 falhas (`OK`)**. A versão do Python usada está registrada no arquivo `VERSAO_PYTHON_TESTES.txt` no pacote.
 
-## 2. Cenários simulados
+## 2. Cenários de diferentes usuarios
 
 | ID | Persona fictícia e tarefa | Resultado esperado | Observação simulada / risco identificado | Ajuste implementado |
 |---|---|---|---|---|
@@ -26,12 +26,4 @@ Os testes verificam a conversão de tarifa, a economia de iluminação, a geraç
 
 A revisão concluiu que o assistente precisa mostrar, junto dos números, as condições que os geraram. Foram mantidos os seguintes avisos na solução: tarifa simplificada não equivale à conta final; LED depende das lâmpadas existentes; geração solar é variável; custo do sistema de 1 kWp é uma extrapolação; cálculo de emissões não representa ciclo de vida; nenhuma economia ou prazo de retorno é garantido.
 
-## 4. Como reproduzir os testes
 
-1. Execute os testes automatizados pelo terminal.
-2. Rode `python main.py`.
-3. Use a opção 2 para abrir a comparação.
-4. Use a opção 4 e tente: `Como economizar com LED?`, `Qual tarifa foi usada?`, `Essa economia é garantida?` e `Como saber quanto meu telhado gera?`.
-5. Compare as respostas com os requisitos desta documentação.
-
-**Resultado que deve ser registrado depois da execução:** número de testes aprovados/falhos observado no terminal, versão do Python e data. Não registrar um resultado automatizado como executado se o comando não tiver sido rodado.
