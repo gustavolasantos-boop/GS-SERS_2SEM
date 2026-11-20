@@ -1,0 +1,50 @@
+{
+  "projeto": {
+    "nome": "Citizen Assist AI — Energia Cidadã",
+    "autor": "Gustavo Lima Andrade Santos",
+    "rm": "571709",
+    "disciplina": "Soluções em Energias Renováveis e Sustentáveis",
+    "data_referencia": "2026-11-19"
+  },
+  "publico_alvo": "Famílias de residências urbanas da Região Metropolitana de São Paulo que querem entender a conta de luz e reduzir o consumo sem depender de conhecimento técnico prévio.",
+  "necessidade": "Reduzir o consumo comprado da rede e o custo de energia de uma residência de referência, comparando uma medida de eficiência energética com geração solar fotovoltaica.",
+  "consumo": {
+    "media_residencial_brasil_kwh_mes": 176.0,
+    "cenario_residencia_kwh_mes": 180.0,
+    "periodo_referencia": "média mensal; cenário didático anualizado por 12 meses",
+    "origem": "Boletim Mensal de Monitoramento do Sistema Elétrico — MME, janeiro de 2026, dados contabilizados até dezembro de 2025. O consumo médio residencial dos últimos 12 meses informado para jan-dez/2025 é 176 kWh por unidade consumidora. O cenário usa 180 kWh/mês, arredondamento explícito para fins didáticos."
+  },
+  "tarifa": {
+    "distribuidora": "Enel Distribuição São Paulo",
+    "classe": "B1 residencial convencional",
+    "tusd_r_mwh": 472.42,
+    "te_r_mwh": 316.96,
+    "tarifa_energia_estimativa_r_kwh": 0.78938,
+    "validade_inicio": "2026-07-04",
+    "origem": "Página oficial de tarifas da Enel São Paulo; Resolução Homologatória ANEEL nº 3.596/2026, valores válidos a partir de 04/07/2026.",
+    "limite": "TUSD + TE divididos por 1.000, sem impostos, bandeira tarifária, iluminação pública, custo de disponibilidade, tarifa social ou outros itens da fatura. Não é uma previsão do valor final da conta."
+  },
+  "iluminacao_led": {
+    "quantidade_lampadas": 10,
+    "potencia_antiga_w": 60.0,
+    "potencia_led_w": 9.0,
+    "horas_uso_por_dia": 4.0,
+    "dias_mes": 30,
+    "preco_unitario_led_estimado_brl": 8.0,
+    "origem_custo": "Premissa estimada para exercício didático, não cotação de loja. Pressupõe que as lâmpadas antigas sejam incandescentes de 60 W e que LEDs de 9 W forneçam iluminação comparável."
+  },
+  "solar_fotovoltaica": {
+    "potencia_sistema_kwp": 1.0,
+    "geracao_mensal_por_kwp_kwh": 100.0,
+    "custo_referencia_sistema_4kwp_r_por_wp": 2.91,
+    "custo_estimado_1kwp_brl": 2910.0,
+    "origem_custo": "Pesquisa Estratégica de Geração Distribuída da Greener, junho de 2026: preço médio total reportado de R$ 2,91/Wp para sistema residencial de 4 kWp. O valor de 1 kWp é extrapolado linearmente apenas para simulação acadêmica.",
+    "origem_geracao": "Estimativa ilustrativa configurável de 100 kWh/mês por kWp, não uma medição local. Para projeto real, estimar com PVGIS/JRC ou Atlas Brasileiro de Energia Solar do INPE usando localização, inclinação, orientação, sombras e perdas do telhado.",
+    "limites": "O custo real de um sistema pequeno pode ser maior que a extrapolação linear. Geração varia por local, estação, sombras, orientação, perdas e equipamento. O benefício financeiro depende do autoconsumo, regras vigentes de compensação, encargos e tarifa de disponibilidade."
+  },
+  "emissoes": {
+    "fator_kg_co2eq_mwh": 64.8,
+    "origem": "Balanço Energético Nacional 2026, publicado pela EPE/MME: fator médio de 64,8 kg CO2 equivalente por MWh de eletricidade gerada no Brasil em 2025.",
+    "limite": "Indicador simplificado de emissões médias evitadas por energia da rede substituída; não é análise de ciclo de vida dos equipamentos nem garantia de redução marginal real."
+  }
+}
