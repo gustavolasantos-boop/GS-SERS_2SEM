@@ -106,7 +106,7 @@ GS_Citizen_Assist_Energia/
 └── docs/
     ├── ANALISE_ENERGETICA.md
     ├── TESTES_USABILIDADE.md
-    └── ROTEIRO_VIDEO.md
+
 ```
 
 ## 8. Testes
