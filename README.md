@@ -75,15 +75,51 @@ No menu principal, selecione:
 
 As premissas configuráveis estão em `data/parametros.json`. Alterações devem preservar os nomes das chaves para que os cálculos continuem funcionando.
 
-## 6. Resultado da comparação — cenário-base
+## 6. Justificativas das Recomendações
 
-Com as premissas entregues:
+As recomendações do módulo Energia Cidadã foram definidas considerando o consumo estimado da residência, o investimento inicial, a facilidade de implementação, a economia potencial de energia e os impactos ambientais. O objetivo é apresentar alternativas acessíveis e tecnicamente justificadas, sem tratar estimativas como resultados garantidos.
 
-- **Tarifa de referência:** R$ 0,78938/kWh (TUSD + TE da classe B1 residencial convencional da Enel São Paulo; não é o total da fatura).
-- **LED:** economia calculada de 61,2 kWh/mês, ou 734,4 kWh/ano. O custo de R$ 80,00 para dez LEDs é uma premissa de exercício, não uma cotação verificada.
-- **Solar:** geração estimada de 100 kWh/mês para 1 kWp. O custo de referência de R$ 2.910,00 é uma extrapolação linear de um valor médio de R$ 2,91/Wp divulgado para sistemas residenciais de 4 kWp em junho de 2026; não equivale a um orçamento de sistema de 1 kWp.
+### 1. Alternativa A — Substituição de lâmpadas antigas por LEDs
 
-O programa também mostra o valor bruto equivalente da energia e as emissões médias evitadas estimadas. Esses valores não são garantias de economia, retorno financeiro ou benefício ambiental real. Leia `docs/ANALISE_ENERGETICA.md`.
+**Justificativa econômica:** A substituição de dez lâmpadas incandescentes de 60 W por LEDs de 9 W considera um investimento didático de R$ 80,00, utilizando o preço estimado de R$ 8,00 por lâmpada. Com quatro horas de utilização diária, a redução estimada é de 61,2 kWh por mês, equivalente a aproximadamente R$ 48,31 mensais em energia, utilizando a tarifa simplificada de R$ 0,78938/kWh.
+
+Esse valor representa uma estimativa bruta da energia economizada, e não uma garantia de redução nesse valor na fatura. O resultado real depende do tempo de utilização, da tarifa aplicável e das condições da residência.
+
+**Justificativa de viabilidade:** A medida foi recomendada por apresentar baixo investimento inicial e implementação simples, sem necessidade de obras ou instalação de equipamentos complexos. É especialmente adequada para residências que ainda utilizam lâmpadas incandescentes ou outras lâmpadas de potência elevada. Caso a residência já utilize LEDs eficientes, a economia adicional poderá ser pequena ou inexistente.
+
+**Justificativa ambiental:** A redução do consumo de eletricidade diminui a demanda por energia da rede e pode contribuir para reduzir as emissões associadas à geração elétrica. No cenário estudado, utilizando o fator médio de emissões de 0,0648 kg CO2eq/kWh, a redução estimada corresponde a aproximadamente 3,97 kg CO2eq por mês, ou 47,65 kg CO2eq por ano. Trata-se de uma aproximação que não considera todo o ciclo de vida dos equipamentos. O descarte adequado das lâmpadas substituídas também deve ser considerado.
+
+### 2. Alternativa B — Geração solar fotovoltaica
+
+**Justificativa econômica:** A geração solar foi incluída por representar uma alternativa de fornecimento de energia renovável. No cenário didático, um sistema de 1 kWp possui geração estimada de 100 kWh por mês. Considerando a tarifa simplificada adotada, essa produção corresponde a um valor bruto equivalente de aproximadamente R$ 78,94 mensais.
+
+O investimento de referência utilizado é de R$ 2.910,00, calculado por extrapolação proporcional de uma referência de R$ 2,91/Wp para um sistema residencial de 4 kWp. Esse valor não constitui um orçamento comercial para um sistema de 1 kWp. O retorno financeiro real depende do preço de instalação, da geração efetiva, do consumo simultâneo, das regras de compensação, dos encargos, da manutenção e das condições de financiamento.
+
+**Justificativa de viabilidade:** A solução é indicada para residências com espaço adequado para os módulos, baixa incidência de sombras e condições técnicas favoráveis. Sua implementação exige avaliação do local, orçamento de uma empresa especializada e atendimento às exigências aplicáveis da distribuidora. Por apresentar investimento inicial superior ao da troca de lâmpadas, pode ser mais adequada para moradores que dispõem de recursos para investir no sistema e pretendem utilizá-lo por um período prolongado.
+
+**Justificativa ambiental:** A energia solar fotovoltaica gera eletricidade a partir de uma fonte renovável e pode reduzir a necessidade de eletricidade fornecida pela rede. Aplicando o fator médio de emissões adotado no projeto, a produção estimada de 100 kWh por mês corresponde a aproximadamente 6,48 kg CO2eq por mês, ou 77,76 kg CO2eq por ano, em emissões médias potencialmente evitadas. Essa estimativa é simplificada e não desconta as emissões da fabricação, do transporte, da instalação e do descarte dos equipamentos.
+
+### 3. Comparação e critérios para a recomendação
+
+| Critério | LEDs | Solar fotovoltaica |
+|---|---|---|
+| Investimento inicial de referência | R$ 80,00 | R$ 2.910,00 |
+| Resultado energético estimado | Economia de 61,2 kWh/mês | Geração de 100 kWh/mês |
+| Facilidade de implementação | Alta, quando há lâmpadas antigas para substituir | Depende das condições do imóvel e da instalação |
+| Necessidade de espaço e obras | Não exige obras | Requer espaço apropriado e instalação técnica |
+| Benefício ambiental principal | Redução do consumo elétrico | Geração de eletricidade renovável |
+| Principal limitação | A economia depende das lâmpadas substituídas e do uso | Geração e retorno financeiro dependem das condições reais |
+
+Os valores de energia das alternativas não são diretamente equivalentes: a primeira representa consumo evitado, enquanto a segunda representa eletricidade gerada. Da mesma forma, os valores monetários apresentados não correspondem necessariamente à economia líquida na fatura.
+
+A recomendação inicial é priorizar medidas de eficiência energética de baixo custo, como a substituição de lâmpadas antigas por LEDs, quando aplicável. Para residências com condições físicas e financeiras adequadas, a geração solar fotovoltaica pode ser avaliada como uma alternativa complementar. As duas medidas podem ser combinadas, desde que o sistema fotovoltaico seja dimensionado considerando o consumo restante após as medidas de eficiência.
+
+### 4. Limitações das recomendações
+
+Todas as estimativas deste projeto possuem finalidade educacional e dependem das premissas configuradas. Antes de tomar uma decisão real, recomenda-se consultar a fatura de energia, confirmar as tarifas vigentes, verificar o consumo efetivo, obter orçamentos atualizados e utilizar uma simulação solar que considere a localização, a orientação do telhado, a inclinação e o sombreamento.
+
+As referências e os parâmetros utilizados estão documentados nas seções de dados e referências da análise energética. As recomendações do assistente devem ser interpretadas como orientação inicial para apoiar decisões conscientes, e não como garantia de economia financeira ou de redução exata das emissões.
+
 
 ## 7. Estrutura do projeto
 
