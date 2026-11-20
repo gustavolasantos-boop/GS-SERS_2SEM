@@ -149,6 +149,4 @@ GS_Citizen_Assist_Energia/
 - O fator de emissões é uma média nacional e não analisa o ciclo de vida de lâmpadas, módulos, inversores ou baterias.
 - As recomendações são educativas. Para instalar sistemas elétricos ou fotovoltaicos, obtenha avaliação e orçamento de profissional habilitado.
 
-## 11. Entrega acadêmica
 
-O enunciado solicita repositório GitHub, vídeo técnico não listado de até 3 minutos e um arquivo `.txt` contendo nome/RM, link do repositório e link do vídeo. O arquivo `ENTREGA_template.txt` serve como modelo; complete os dois links depois de publicar os materiais. O ZIP deste projeto não substitui a exigência de publicação ou o formato final indicado pelo professor.
